@@ -10,14 +10,31 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("For loops problems 2");  // To Printing the tables
+            Console.WriteLine("For loops problems 3");  // To Check prime number
             Console.WriteLine("Please enter the number");
-            int n=int.Parse(Console.ReadLine());
-
-            for(int i=1; i<=n; i++)
+            int number=int.Parse(Console.ReadLine());
+            int result=0;
+            for(int i=0; i<=number; i++)
             {
-                Console.WriteLine("{0}x2={1}", i, (i * 2));
-                
+                if (number %2 == 0)
+                {
+                    result = 1;
+                    break;
+                  
+                }
+
+
+            }
+            if (result == 0)
+            {
+                Console.WriteLine("The number  {0} is prime", number);
+            }
+            else
+            {
+                Console.WriteLine("The number is {0} is a not prime", number);
+            }
+            {
+
             }
         }
         
