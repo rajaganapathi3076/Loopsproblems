@@ -10,14 +10,16 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("For loops problems");
+            Console.WriteLine("For loops problems 2");  // To Printing the tables
             Console.WriteLine("Please enter the number");
-            int x=int.Parse(Console.ReadLine());
+            int n=int.Parse(Console.ReadLine());
 
-            for(int i=1; i<=x; i++)
+            for(int i=1; i<=n; i++)
             {
-                Console.Write(" {0} ", i);
+                Console.WriteLine("{0}x2={1}", i, (i * 2));
+                
             }
         }
+        
     }
 }
