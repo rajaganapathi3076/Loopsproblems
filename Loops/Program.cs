@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,32 +11,19 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("For loops problems 3");  // To Check prime number
-            Console.WriteLine("Please enter the number");
-            int number=int.Parse(Console.ReadLine());
-            int result=0;
-            for(int i=0; i<=number; i++)
+            //Find the sum of first 10 natural numbers 
+
+            Console.WriteLine("For loops problems 4"); 
+
+            int sum = 0;
+            for(int i=0; i<=10; i++)
             {
-                if (number %2 == 0)
-                {
-                    result = 1;
-                    break;
-                  
-                }
+               sum=sum+i;
+                Console.WriteLine(i);
 
 
-            }
-            if (result == 0)
-            {
-                Console.WriteLine("The number  {0} is prime", number);
-            }
-            else
-            {
-                Console.WriteLine("The number is {0} is a not prime", number);
-            }
-            {
-
-            }
+            }Console.Write("\n The sum is :{0}\n", sum);
+          
         }
         
     }
