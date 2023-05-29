@@ -13,31 +13,21 @@ namespace Loops
         {
             // Printing the even numbers in while lops 
 
-            Console.WriteLine("While loops problems 3");
-            Console.WriteLine("Enter the number");
-            int n = int.Parse(Console.ReadLine());
-            int i=0 ;
-           
-            
-
-             
-            
-            while (i <= n)
+            Console.WriteLine("While loops problems 5");
+            int a = 1;
+            while (a <= 5)
             {
-                Console.WriteLine();
-               int  j = 1;
-               
-                
-                while(j<=i)
+                int b = 1;
+                while (b <= 5)
                 {
-                    Console.Write( j + " ") ; 
-                    j++;
+                    Console.Write(b + " ");
+                    b++;
                 }
-               i++;
-               
+                Console.WriteLine();
+                a++;
             }
             Console.ReadKey();
-            
+
         }
         
     }
