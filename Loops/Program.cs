@@ -11,23 +11,17 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            // Printing the even numbers in while lops 
+            //Printing the array charcters in for eachloop
 
-            Console.WriteLine("While loops problems 5");
-            int a = 1;
-            while (a <= 5)
+            Console.WriteLine("for each loops problems 1");
+
+            char[] chars =  { 'a', 'b', 'c', 'd', 'e' };
+
+            foreach (char c in chars)
             {
-                int b = 1;
-                while (b <= 5)
-                {
-                    Console.Write(b + " ");
-                    b++;
-                }
-                Console.WriteLine();
-                a++;
+                Console.Write(" {0} ",c);
             }
-            Console.ReadKey();
-
+          
         }
         
     }
