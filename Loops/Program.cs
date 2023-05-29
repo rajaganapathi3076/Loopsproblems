@@ -17,21 +17,23 @@ namespace Loops
             Console.WriteLine("Enter the number");
             int n = int.Parse(Console.ReadLine());
             int i=0 ;
-            int j=1;
-            int k=0 ;
-            Console.Write("{0} {1}", i, j);
-
-
-                k = i + j;
+           
             
-            while (k <= n)
+
+             
+            
+            while (i <= n)
             {
-                Console.Write(" {0} ", k);
-                i++;
-                i = j;
-                j = k;
-                k = i + j;
+                Console.WriteLine();
+               int  j = 1;
                
+                
+                while(j<=i)
+                {
+                    Console.Write( j + " ") ; 
+                    j++;
+                }
+               i++;
                
             }
             Console.ReadKey();
