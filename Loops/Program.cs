@@ -11,20 +11,20 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            //Find the sum of first 10 natural numbers 
+            // Printing the even numbers in while lops 
 
-            Console.WriteLine("While loops problems 1");
+            Console.WriteLine("While loops problems 2");
             Console.WriteLine("Enter the number");
             int n = int.Parse(Console.ReadLine());
-            int i, res;
+            int i;
 
 
-            i = 0;
-            while(i<=10)
+            i = 2;
+            while (i <= n)
             {
-                res = n * i;
-                Console.WriteLine("{0}x{1}={2}",i,n,res);
-                i++;
+                Console.WriteLine("{0}", i);
+                i = i + 2;
+               
             } 
             Console.ReadLine();
         }
